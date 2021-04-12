@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AR Portfolio</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Portfolio</h1>
+    <div class="wrapper">
+      <div class="line-area">
+        <div class="single-item active">
+          <p class="dot">1</p>
+          <div class="content-area">
+            <a href="#">
+              <div>
+                <p>Projekt 1</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="single-item">
+          <p class="dot">2</p>
+          <div class="content-area">
+            <a href="#">
+              <div>
+                <p>Projekt 2</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="single-item">
+          <p class="dot">3</p>
+          <div class="content-area">
+            <a href="#">
+              <div>
+                <p>Projekt 3</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="single-item">
+          <p class="dot">4</p>
+          <div class="content-area">
+            <a href="#">
+              <div>
+                <p>Projekt 4</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(".wrapper .single-item > p").on("mouseenter mouseleave", function (e) {
+        $(".wrapper .single-item.active").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+    </script>
+  </body>
 </html>
