@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <p>ar</p>
+      <button class="burger" id="burger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="portfolio">
+      <h1 class="section-title">Portfolio</h1>
+      <div class="wrapper">
+        <div class="line-area">
+          <div class="single-item active">
+            <p class="dot">GWO</p>
+            <div class="content-area">
+              <a
+                href="https://github.com/aleksandra-rybinska/GWO-recruitment-task"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>GWO recruitment task</h3>
+                  <p>
+                    This is the solution of the recruitment task for the GWO. It
+                    consists in writing a program that shows the book purchasing
+                    process:
+                  </p>
+                  <ul>
+                    <li>downloading data from API</li>
+                    <li>adding and removing products from the shopping cart</li>
+                    <li>
+                      filling the form with personal data needed to complete the
+                      order
+                    </li>
+                    <li>sending the POST request</li>
+                  </ul>
+                  <img src="gwo.jpg" alt="recruitment task screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">SHOPPING CART</p>
+            <div class="content-area">
+              <a
+                href="https://aleksandra-rybinska.github.io/Shopping-cart-react-ts/"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>Shopping Cart</h3>
+                  <p>React app using material UI and TypeScript</p>
+                  <img src="shopping-cart.jpg" alt="shopping cart screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">PONG</p>
+            <div class="content-area">
+              <a
+                href="https://aleksandra-rybinska.github.io/jfddr1-project-2/pong.html"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>PONG</h3>
+                  <p>Game based on canvas</p>
+                  '
+                  <img src="pong.jpg" alt="pong screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">TIC-TAC-TOE</p>
+            <div class="content-area">
+              <a
+                href="https://aleksandra-rybinska.github.io/jfddr1-project-2/tic-tac-toe.html"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>Tic Tac Toe</h3>
+                  <p>Projekt 3</p>
+                  <img src="tictactoe.jpg" alt="tic-tac-toe screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">COLOR FLIPPER</p>
+            <div class="content-area">
+              <a
+                href="https://aleksandra-rybinska.github.io/jfddr1-project-2/tic-tac-toe.html"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>Color flipper</h3>
+                  <p>
+                    Using vanilla JS created simple tool to get random hex color
+                  </p>
+                  <img src="" alt="color flipper screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">COUNTER</p>
+            <div class="content-area">
+              <a href="" target="_blank">
+                <div class="content">
+                  <h3>Counter</h3>
+                  <p>Pure JS counter</p>
+                  <img src="" alt="counter screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="single-item">
+            <p class="dot">TO DO</p>
+            <div class="content-area">
+              <a
+                href="https://aleksandra-rybinska.github.io/jfddr1-project-2/to-do-list.html"
+                target="_blank"
+              >
+                <div class="content">
+                  <h3>To Do List</h3>
+                  <p>Simple To Do List</p>
+                  <img src="todo.jpg" alt="to do list screenshot" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(".wrapper .single-item > p").on("mouseenter mouseleave", function (e) {
+        $(".wrapper .single-item.active").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+    </script>
+  </body>
+</html>
