@@ -19,35 +19,123 @@
 }
 .single-item {
   display: block;
-  width: 8%;
+  width: 6%;
   height: 100%;
-  transition: width 0.8s;
+
   z-index: 1;
 }
 .single-item > p {
-  top: -24px;
-  width: 100%;
+  padding: 5px 10px;
+  width: 170px;
+  height: fit-content;
   white-space: nowrap;
   cursor: pointer;
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 20px;
 }
+
+.single-item:nth-child(6n) > p {
+  margin: 132px auto 5px;
+}
+.single-item:nth-child(6n + 3) > p {
+  margin: 21px auto 5px;
+}
+
+.single-item:nth-child(6n + 2) > p,
+.single-item:nth-child(6n + 5) > p {
+  margin: 58px auto 5px;
+}
+.single-item:nth-child(6n + 1) > p,
+.single-item:nth-child(6n + 4) > p {
+  margin: 95px auto 5px;
+}
+
+.single-item > p:after {
+  content: "";
+  display: block;
+  width: 3px;
+  background: #000;
+}
+.single-item:nth-child(6n) > p:after {
+  height: 140px;
+  margin: -146px auto 5px;
+}
+.single-item:nth-child(6n + 3) > p:after {
+  height: 35px;
+  margin: -41px auto 5px;
+}
+.single-item:nth-child(6n + 2) > p:after,
+.single-item:nth-child(6n + 5) > p:after {
+  height: 70px;
+  margin: -75px auto 5px;
+}
+.single-item:nth-child(6n + 1) > p:after,
+.single-item:nth-child(6n + 4) > p:after {
+  height: 110px;
+  margin: -115px auto 5px;
+}
+
+/* AFTER ACTIVE */
+
+.single-item.active:nth-child(6n) > p:after {
+  margin: -146px 86px 5px;
+}
+.single-item.active:nth-child(6n + 3) > p:after {
+  margin: -41px 86px 5px;
+}
+.single-item.active:nth-child(6n + 2) > p:after,
+.single-item.active:nth-child(6n + 5) > p:after {
+  margin: -75px 86px 5px;
+}
+.single-item.active:nth-child(6n + 1) > p:after,
+.single-item.active:nth-child(6n + 4) > p:after {
+  margin: -115px 86px 5px;
+}
+
+/* BEFORE */
+
 .single-item > p:before {
   content: "";
   display: block;
+  margin-left: 5px;
   width: 16px;
   height: 16px;
   background: #000;
   border-radius: 50%;
 }
-.single-item:nth-child(even) > p:before {
-  margin: -4px auto 7px;
+
+.single-item:nth-child(6n) > p:before {
+  margin: -142px auto 126px;
 }
-.single-item:nth-child(odd) > p:before {
-  margin: -4px auto 26px;
+.single-item:nth-child(6n + 3) > p:before {
+  margin: -32px auto 16px;
 }
+.single-item:nth-child(6n + 1) > p:before,
+.single-item:nth-child(6n + 4) > p:before {
+  margin: -106px auto 90px;
+}
+.single-item:nth-child(6n + 2) > p:before,
+.single-item:nth-child(6n + 5) > p:before {
+  margin: -69px auto 53px;
+}
+
+.single-item.active > p {
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+.single-item.active > p:before {
+  border-radius: 50%;
+  margin-left: 80px;
+  transform: scale(1.5, 1.5);
+  transform-origin: center;
+  transition: 0.2s ease-in;
+}
+
 .content-area {
   display: none;
   position: absolute;
-  top: 120px;
+  top: 170px;
   left: 1px;
   width: 90%;
 }
@@ -79,20 +167,16 @@
   display: flex;
   padding: 25px;
 }
-
 .content-description p {
   text-align: justify;
 }
-
 .content-description ul {
   text-align: left;
   list-style: none;
 }
-
 .content-description li {
   padding-top: 5px;
 }
-
 .content-description li::before {
   content: "";
   display: inline-block;
@@ -100,27 +184,15 @@
   width: 20px;
   background: url("/img/chevron-right-solid.svg") no-repeat left;
 }
-
 .content img {
   max-width: 250px;
   padding-left: 15px;
 }
 
 .single-item.active {
-  width: 10%;
+  width: 12%;
+  margin-left: 3%;
   transition: all 0.8s linear;
-}
-.single-item.active > p {
-  font-weight: 600;
-}
-.single-item.active > p:before {
-  margin: -12px auto 39px;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  transform: scale(0.8, 0.8);
-  transform-origin: center;
-  transition: 0.2s ease-in;
 }
 .single-item.active .content-area {
   display: block;
