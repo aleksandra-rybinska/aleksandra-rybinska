@@ -12,6 +12,7 @@ body {
 /* general */
 .section-title {
   margin: 30px 0;
+  color: #fac011;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -46,7 +47,7 @@ nav p {
   border: 0;
   background: transparent;
   font-size: 20px;
-  color: #2c405e;
+  color: #fff;
   display: none;
 }
 .burger:focus {
@@ -68,7 +69,7 @@ nav ul li a::after {
   content: "";
   width: 100%;
   height: 1px;
-  background: #2c405e;
+  background: #fff;
   position: absolute;
   left: 0;
   bottom: -18px;
