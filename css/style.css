@@ -5,7 +5,8 @@
   font-family: "sans-serif";
 }
 body {
-  background: #99e4c6;
+  background: #282a2e;
+  color: #fff;
 }
 
 /* general */
@@ -14,7 +15,6 @@ body {
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  color: #262626;
 }
 
 /* nav */
