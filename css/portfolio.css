@@ -125,6 +125,7 @@
 
 .single-item.active > p {
   font-weight: 600;
+  color: #fac011;
   transition: 0.2s ease-in;
 }
 .single-item.active > p:before {
@@ -187,12 +188,10 @@
 .content-description li::before {
   content: "";
   display: inline-block;
-  margin: 0 auto -1px;
+  margin: 0 auto -3px;
   height: 16px;
   width: 20px;
-  background: url("/img/chevron-right-solid.svg") no-repeat left;
-  filter: invert(82%) sepia(15%) saturate(4757%) hue-rotate(351deg)
-    brightness(103%) contrast(96%);
+  background: url("/img/chevron-right-solid-orange.svg") no-repeat left;
 }
 .content img {
   width: 250px;
