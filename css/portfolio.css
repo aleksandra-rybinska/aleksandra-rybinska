@@ -191,7 +191,8 @@
   margin: 0 auto -3px;
   height: 16px;
   width: 20px;
-  background: url("/img/chevron-right-solid-orange.svg") no-repeat left;
+  background-image: url('/img/chevron-right-solid-orange.svg');
+  background-repeat: no-repeat;
 }
 .content img {
   width: 250px;
